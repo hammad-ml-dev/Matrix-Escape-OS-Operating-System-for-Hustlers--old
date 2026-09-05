@@ -1,0 +1,17 @@
+import React from 'react';
+
+interface LogoProps {
+  className?: string;
+}
+
+export const Logo: React.FC<LogoProps> = ({ className = "h-6 w-6" }) => {
+  return (
+    <svg className={className} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="45" fill="currentColor" stroke="currentColor" className="text-matrix-bg dark:text-matrix-bg" strokeWidth="3"/>
+      <path d="M50 15C34.5 15 22 27.5 22 43C22 58.5 34.5 71 50 71C65.5 71 78 58.5 78 43C78 27.5 65.5 15 50 15ZM50 63C39 63 30 54 30 43C30 32 39 23 50 23C61 23 70 32 70 43C70 54 61 63 50 63Z" className="text-royal-primary dark:text-matrix-primary fill-current"/>
+      <path d="M50 27C41.2 27 34 34.2 34 43C34 51.8 41.2 59 50 59C58.8 59 66 51.8 66 43C66 34.2 58.8 27 50 27ZM50 51C45.6 51 42 47.4 42 43C42 38.6 45.6 35 50 35C54.4 35 58 38.6 58 43C58 47.4 54.4 51 50 51Z" className="text-royal-secondary dark:text-matrix-secondary fill-current"/>
+      <path d="M77.1 67.5L65 55.4C64.2 56.4 63.3 57.3 62.3 58.1L74.4 70.2C75.4 71.2 77 71.2 78 70.2C79 69.2 79 67.6 78 66.6L77.1 67.5Z" className="text-royal-accent dark:text-matrix-accent fill-current"/>
+      <path d="M50 71V78L60 88L70 78L50 71Z" className="text-royal-accent dark:text-matrix-accent fill-current"/>
+    </svg>
+  );
+};
